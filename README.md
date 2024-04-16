@@ -41,7 +41,7 @@ and in reverse
 
 The conversion to TSV also removes all quotes, as TSV does not require field quoting.
 
-Or again with rec files:
+Or again with rec files, a round trip:
 
 ```sh
 ./tsv2csv < file.tsv | csv2rec | rec2csv | ./tsv2csv --undo
